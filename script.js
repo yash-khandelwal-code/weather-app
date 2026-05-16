@@ -24,8 +24,31 @@ const changedata = async (Cityname) =>{
      windval.innerHTML = `${windspeed.speed} m/s`;
      let Humidity = newdata.main;
      humidval.innerHTML = `${Humidity.humidity} %`;
-     let newimg = newdata.weather;
-     let fimg = newimg[0].main; 
-     img.src = `${fimg}.png`; 
+         let Main = newdata.weather[0].main;
+
+if (Main === "Clear") {
+    img.src = "clear.png";
+}
+else if (Main === "Clouds") {
+    img.src = "clouds.png";
+}
+else if (Main === "Rain") {
+    img.src = "rain.png";
+}
+else if (Main === "Drizzle") {
+    img.src = "drizzle.png";
+}
+else if (Main === "Mist") {
+    img.src = "mist.png";
+}
+else if (Main === "Snow") {
+    img.src = "snow.png";
+}
+else if (Main === "Thunderstorm") {
+    img.src = "rain.png"; 
+}
+else if (Main === "Haze") {
+    img.src = "Haze.png"; 
+}
     
 }

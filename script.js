@@ -48,7 +48,7 @@ else if (Main === "Thunderstorm") {
     img.src = "rain.png"; 
 }
 else if (Main === "Haze") {
-    img.src = "Haze.png"; 
+    img.src = "haze.png"; 
 }
     
 }
